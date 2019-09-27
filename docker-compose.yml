@@ -1,0 +1,19 @@
+version: '2.1'
+
+services:
+  app:
+    image: maxca789/apache-php7-xdebug:slim
+    container_name: p2p-project
+    restart: always
+    ports:
+      - "8901:80"
+    volumes:
+      - .:/var/www/html
+    mem_limit: 2048m
+    networks:
+      - redis-msyql-phpmyadmin_mysqlnetwork
+    cap_add:
+      - SYS_PTRACE
+networks:
+  redis-msyql-phpmyadmin_mysqlnetwork:
+    external: true
