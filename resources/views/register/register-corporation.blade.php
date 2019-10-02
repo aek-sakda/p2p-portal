@@ -328,7 +328,7 @@
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
-                            <a href="#" class="btn btn-primary">สมัคร</a>
+                            <a href="/register/question?type=corporation" class="btn btn-primary">สมัคร</a>
                         </div>
                     </form>
                 </div>
