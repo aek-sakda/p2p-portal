@@ -68,9 +68,6 @@
 
 @section('contents')
     <div class="card card-info">
-        {{--        <div class="card-header">--}}
-        {{--            <h4 class="card-title h4">การลงทะเบียนของผู้ให้กู้ที่เป็นบุคคลธรรมดา</h4>--}}
-        {{--        </div>--}}
         <div class="card-body">
             <div class="row">
                 <div class="col-lg-12">
@@ -371,7 +368,7 @@
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
-                            <a href="/register/question?type=personal" class="btn btn-primary">สมัคร</a>
+                            <a href="/register/congratulations?type=personal" class="btn btn-primary">สมัคร</a>
                         </div>
                     </form>
                 </div>

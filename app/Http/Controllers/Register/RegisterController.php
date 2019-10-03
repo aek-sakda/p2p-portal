@@ -26,41 +26,21 @@ class RegisterController extends Controller
         return view('register.register-personal');
     }
 
-    public function question(CreateRegisterRequest $request)
+    public function congratulations(CreateRegisterRequest $request)
     {
         $input = $request->all();
-        return view('register.start-question')->with($input);
+        return view('register.congratulations')->with($input);
     }
 
-    public function questionCorporation(CreateRegisterRequest $request)
+    public function riskAssessment(CreateRegisterRequest $request)
     {
-        return view('register.question-corporation');
+        $input = $request->all();
+        return view('register.risk-assessment-form')->with($input);
     }
 
-    public function questionPersonal(CreateRegisterRequest $request)
+    public function riskAssessmentResult(CreateRegisterRequest $request)
     {
-        $data['questions'] = [
-            [
-                'question' => 'ปัจจุบันท่านอายุ',
-                'ch1' => 'มากกว่า 55 ปี',
-                'ch2' => '45-55 ปี',
-                'ch3' => '35-44 ปี',
-                'ch4' => 'น้อยกว่า 35 ปี'
-            ],
-            [
-                'question' => 'ปัจจุบันท่านมีภาระทางการเงินและค่าใช้จ่ายประจำ เช่น ค่าผ่อนรถ ค่าใช้จ่ายส่วนตัว และค่าเลี้ยงดูครอบครัว เป็นสัดส่วนเท่าใด',
-                'ch1' => 'มากกว่าร้อยละ 75 ของรายได้ทั้งหมด',
-                'ch2' => 'ระหว่างร้อยละ 50 ถึงร้อยละ 75 ของรายได้ทั้งหมด',
-                'ch3' => 'ระหว่างร้อยละ 25 ถึงร้อยละ 50 ของรายได้ทั้งหมด',
-                'ch4' => 'น้อยกว่าร้อยละ 25 ของรายได้ทั้งหมด'
-            ]
-        ];
-        return view('register.question-personal')->with($data);
-    }
-
-    public function questionResult(CreateRegisterRequest $request)
-    {
-        return view('register.question-result');
+        return view('register.risk-assessment-result');
     }
 
     public function termAndCondition(CreateRegisterRequest $request)
