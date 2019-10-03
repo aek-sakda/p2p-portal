@@ -15,10 +15,14 @@
                         <i class="fas fa-check-circle fa-10x" style="color: #2ecc71;"></i>
                     </div>
                     <div class="row justify-content-center" style="margin: 48px 0;">
-                        <h3>Thank you!</h3>
+                        <h3>ยินดีด้วย!</h3>
                     </div>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary">ดำเนินการต่อ</a>
+                        @if($type == 'corporation')
+                            <a href="/register/risk-assessment?type=corporation" class="btn btn-primary">Start</a>
+                        @else
+                            <a href="/register/risk-assessment?type=personal" class="btn btn-primary">Start</a>
+                        @endif
                     </div>
                 </div>
             </div>

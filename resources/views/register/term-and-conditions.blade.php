@@ -8,11 +8,17 @@
 
 @section('contents')
     <div class="card card-info">
-        <div class="card-header">
-            <h3 class="card-title">Term And Conditions</h3>
-        </div>
-        <div class="card-body">
+{{--        <div class="card-header">--}}
+{{--            <h3 class="card-title">Term And Conditions</h3>--}}
+{{--        </div>--}}
+        <div class="card-body" style="padding: 24px;">
             <div class="row">
+                <div class="col-lg-12">
+                    <h4>Term And Conditions</h4>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="margin: 24px 0;">
                 <div class="col-lg-12">
                     <div class="row">
                         <p>
@@ -32,7 +38,6 @@
                                 <label class="custom-control-label" for="customCheck">Agree</label>
                             </div>
                         </div>
-                        <button type="reset" class="btn btn-secondary">Reset</button>
                         <a href="/register/success" class="btn btn-primary">Submit</a>
                     </div>
                 </div>

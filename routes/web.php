@@ -15,10 +15,9 @@ Route::group(['namespace' => 'Register', 'prefix' => '/register'], function ($ro
     $router->get('/', 'RegisterController@index');
     $router->get('/corporation', 'RegisterController@corporation');
     $router->get('/personal', 'RegisterController@personal');
-    $router->get('/question', 'RegisterController@question');
-    $router->get('/question-corporation', 'RegisterController@questionCorporation');
-    $router->get('/question-personal', 'RegisterController@questionPersonal');
-    $router->get('/question-result', 'RegisterController@questionResult');
+    $router->get('/congratulations', 'RegisterController@congratulations');
+    $router->get('/risk-assessment', 'RegisterController@riskAssessment');
+    $router->get('/risk-assessment-result', 'RegisterController@riskAssessmentResult');
     $router->get('/term-and-conditions', 'RegisterController@termAndCondition');
     $router->get('/success', 'RegisterController@success');
     //$router->get('/{id}', 'EmployeeController@show');

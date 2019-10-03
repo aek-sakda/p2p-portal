@@ -8,16 +8,16 @@
 
 @section('contents')
     <div class="card">
-        <div class="card-header" style="background: #05adcd; color: whitesmoke;">
-            <h3 class="card-title h3">ลงทะเบียนผู้ให้กู้</h3>
-        </div>
+{{--        <div class="card-header" style="background: #00AFF0; color: whitesmoke;">--}}
+{{--            <h3 class="card-title h3">ลงทะเบียนผู้ให้กู้</h3>--}}
+{{--        </div>--}}
         <div class="card-body" style="padding: 24px;">
-{{--            <div class="row">--}}
-{{--                <div class="col-lg-12">--}}
-{{--                    <h4>ลงทะเบียนผู้ให้กู้</h4>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <hr>--}}
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>ลงทะเบียนผู้ให้กู้</h4>
+                </div>
+            </div>
+            <hr>
             <div class="row text-center" style="margin: 24px 0;">
                 <div class="col-lg-6">
                     <a href="/register/personal">
